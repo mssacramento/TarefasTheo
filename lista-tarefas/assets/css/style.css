@@ -1,0 +1,167 @@
+:root {
+  --primary-color: rgba(3, 110, 211, 0.678);
+  --neutro: rgba(250, 246, 246, 0.774);
+  --acesso:rgb(21, 65, 122);
+  --bofoo: rgba(10, 13, 197, 0.301);
+  --shadow:rgba(0, 0, 0,0.5);
+  --primary-font: font-family: 'Times New Roman', Times, serif;
+  --secondary-font:'Press Start 2P', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  
+}
+
+body {
+  background: var(--primary-color);
+  font-family: var(--primary-font); 
+}
+
+.header {
+  background-color: var(--bofoo);
+  border: 2px solid var(--neutro);
+  text-align: center;
+  color: var(--acesso);
+  font-size: 1rem;
+  color: var(--neutro);
+  margin-bottom: 0px;
+}
+
+#corpo, .relogio{
+  margin: 0px;
+  
+}
+
+.container {
+  max-width: 50%;
+  margin: 1rem auto;
+  background: var(--neutro);
+  padding: 2rem;
+  border-radius: 1.5rem 0rem;
+  box-shadow: var(--shadow) 2px 3px 2px;
+  text-align: center; 
+}
+
+ul {
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: var(--acesso);
+  
+}
+
+.container li{
+  text-align: left;
+}
+
+
+.apagar{
+  border: 1px solid var(--bofoo);
+  border-radius: 5px;
+  background: rgba(69, 75, 131, 0.507);
+  color: rgba(255, 0, 0, 0.349);
+  font-weight: 700;
+  cursor: pointer;
+  margin: 10px;
+  text-align: right;
+}
+
+.apagar:hover{
+  background: rgba(255, 251, 0, 0.459);
+  color: var(--acesso);
+}
+
+.container h1{
+  text-align: center;
+  color: var(--acesso)
+}
+
+.input-tarefa {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  color:var(--neutro);
+}
+
+input{
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  background: var(--acesso);
+}
+
+input::placeholder{
+color:var(--neutro);
+}
+
+.input-tarefa:focus {
+  outline: 3px solid var(--primary-color);
+}
+
+.btn-tarefa {
+  border: 1px solid var(--bofoo);
+  border-radius: 10px;
+  background: var(--acesso);
+  color: var(--neutro);
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: 30px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn-tarefa:hover {
+  background: var(--neutro);
+  color:var(--acesso);
+  border: 2px solid var(--bofoo);
+}
+
+footer{
+  text-align: right;
+  color: var(--acesso);
+  font-size: 0.8rem;
+  padding: 0px;
+  bottom: 0;
+  position: fixed;
+  width: 30%;
+  margin: 0px;
+  right: 0px;
+  
+}
+.relogio2, a{
+  display: inline-block;
+  margin: 1rem;
+  color: var(--shadow);
+  text-decoration: none;
+  font-weight: 800;
+  
+}
+
+@media only screen and (max-width: 781px) {
+
+  .btn-tarefa {
+    margin-top: 13px;
+    }
+
+  input{
+    font-size: 0.9rem;
+    
+  }
+  .container {
+    max-width: 100%;
+    border-radius: 0rem 0.5rem;
+  }
+
+  footer{
+    background-color: var(--bofoo);
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  .relogio2, a{
+  color: var(--neutro);
+  font-family: var(--secondary-font);
+  }
+}
